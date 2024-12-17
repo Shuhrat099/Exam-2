@@ -1,0 +1,4 @@
+1. v-model bu Vue.js ma`lumotlarini iki tomonlama ma'lumot yordamini amalga oshirish uchun direktiva. Asosan input, textarea bilan ishlatiladi.
+2. Vue Lifecycle Hooks - bu Vue Lifecycle komponenti hayot siklining muayyan bosqichlarida kod ishlab chiqarish funksiyalari
+3. Props - ota komponentdan farzand komponentga malumot kochirish uchun foydalaniladi. Emits - farzand komponentdan ma'lumot uzatish uchun foydalaniladi. Props bilan ota komponent xabar uzatadi, Emits esa farzand komponentdan ota komponentgs hodisa yuboradi.
+4. Teleport Vue3.js da elon qilingan, bu holda komponent tarkibini boshqa DOM joyiga ko`chirish vositalari uchun foydalaniladi.

@@ -1,26 +1,26 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <h1 class="text-red-600">
-      Salom dunyo
-    </h1>
-  </div>
+  <main class="main-wrapper">
+    <!-- <Task1 /> -->
+    <!-- <Task2 /> -->
+    <Task3 />
+    <!-- <Task4 /> -->
+  </main>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script setup>
+// import Task1 from './exam/Task1.vue';
+// import Task2 from './exam/Task2.vue';
+import Task3 from './exam/Task3.vue'
+// import Task4 from './exam/Task4.vue';
+
+import { RouterView, useRoute } from 'vue-router';
+import { computed } from 'vue'
+
+const routeLoyout = computed(() => {
+  return route.meta.loyout ?? 'default';
+});
+const activeLoyout = computed(() => {
+  return loyouts[routeLoyout.value];
+});
+
+</script>
